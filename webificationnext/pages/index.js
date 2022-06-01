@@ -3,19 +3,22 @@ import Meta from "../components/Meta"
 import Hero from "../components/Hero"
 import Signup from "../components/Signup"
 import Footer from "../components/Footer"
-import Features from "../components/Features";
+import Features from "../components/Features"
+import axios from "axios"
 import React from "react";
 
 export default function Home() {
-
+  console.log(Features)
   return (
     <div>
         <Meta title='Webification' />
         <Header />
         <Hero title="Welcome to Webification" description="We are here to transform the web and make it real for everyone" button1="Get Started" button2="API"/>
         <Signup />
-        <Features />
+        <Features Features={{}}/>
         <Footer />
     </div>
   )
 }
+
+

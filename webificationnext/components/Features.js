@@ -1,9 +1,11 @@
 import React from "react";
+import Axios from "axios"
 
-function Features({ features }) {
+const Features = ( features ) => {
+    const featuresprops = features.data;
     return(
         <ul>
-            {features.map((feature) => (
+            {featuresprops && featuresprops.map((featuresprop) => (
             <div className="container px-4 py-5" id="hanging-icons">
                 <h2 className="pb-2 border-bottom">Features</h2>
                 <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
@@ -15,8 +17,8 @@ function Features({ features }) {
                             </svg>
                         </div>
                         <div>
-                            <h2>{feature.Title}</h2>
-                            <p>{feature.Description}</p>
+                            <h2>{featuresprop.Title}</h2>
+                            <p>{featuresprop.Description}</p>
                             <a href="#" className="btn btn-primary">
                                 Find out more
                             </a>
@@ -24,18 +26,19 @@ function Features({ features }) {
                     </div>
                 </div>
             </div>
-            ))}
+            ))};
         </ul>
     )
 }
-export async function getServerSideProps() {
-    const res = await fetch('http://localhost:8000/Features')
+
+export default Features
+
+export const getServerSideProps = async () => {
+    const res = await Axios.get('http://localhost:8000/Features')
     const features = await res.json()
     return {
-        props: {
+        props: {data:
             features,
         },
     }
 }
-
-export default Features

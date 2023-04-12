@@ -4,7 +4,6 @@ import Hero from "../components/Hero"
 import Signup from "../components/Signup"
 import Footer from "../components/Footer"
 import Features from "../components/Features"
-import axios from "axios"
 import React from "react";
 
 export default function Home() {

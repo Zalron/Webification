@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css'
+import Meta from "./Meta";
 
-const Hero = ({title, keywords, button1, button2, description}) => {
+const Hero = ({title, description, button1, button2}: IProps) => {
     return (
         <div className="px-4 pt-5 my-5 text-center border-bottom">
             <h1 className="display-4 fw-bold">{title}</h1>
@@ -21,12 +22,20 @@ const Hero = ({title, keywords, button1, button2, description}) => {
     )
 }
 
+export interface IProps{
+    title: string,
+    keywords: string,
+    button1: string,
+    button2: string,
+    description: string,
+}
+
 Hero.defaultProps = {
-    title: 'Webification Hero',
+    title: 'Welcome to Webification',
     keywords: 'web development, programming',
-    button1: 'button1',
-    button2: 'button2',
-    description: 'Paving the way for a new chapter one the Web',
+    button1: 'Get Started',
+    button2: 'API',
+    description: 'We are here to transform the web and make it real for everyone',
 }
 
 export default Hero

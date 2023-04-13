@@ -4,17 +4,25 @@ import Hero from "../components/Hero"
 import Signup from "../components/Signup"
 import Footer from "../components/Footer"
 import Features from "../components/Features"
+import Metatypes from "../components/Metatypes";
 import React from "react";
 
-export default function Home() {
-  console.log(Features)
+export interface IProps{
+    title: string,
+    keywords: string,
+    button1: string,
+    button2: string,
+    description: string,
+}
+export default function Home(props: Metatypes) {
+
   return (
     <div>
-        <Meta title='Webification' />
+        <Meta {...props} />
         <Header />
-        <Hero title="Welcome to Webification" description="We are here to transform the web and make it real for everyone" button1="Get Started" button2="API"/>
+        <Hero {...props}/>
         <Signup />
-        <Features Features={{}}/>
+        <Features />
         <Footer />
     </div>
   )

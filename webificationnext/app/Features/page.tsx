@@ -6,13 +6,11 @@ import Featurette from "../../components/Featurette";
 import Footer from "../../components/Footer";
 import Metatypes from "../../components/Metatypes"
 import React from "react";
-import {IProps} from "../Checkout/page";
 
-export default function Home(props: IProps) {
+export default function FeaturesPage() {
 
     return (
         <div>
-            <Meta {...props} />
             <Header />
             <Carousel />
             <Features />

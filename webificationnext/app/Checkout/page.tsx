@@ -4,18 +4,11 @@ import Checkouts from "../../components/Checkouts";
 import Footer from "../../components/Footer"
 import React from "react";
 
-export interface IProps{
-    title: string,
-    keywords: string,
-    button1: string,
-    button2: string,
-    description: string,
-}
-export default function Home(props: IProps) {
+
+export default function Home() {
 
     return (
         <div>
-            <Meta {...props} />
             <Header />
             <Checkouts />
             <Footer />

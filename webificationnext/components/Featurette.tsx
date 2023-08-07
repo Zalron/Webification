@@ -1,7 +1,7 @@
 const Featurette = () => {
     return (
         <div className="container marketing">
-            <hr class="featurette-divider"/>
+            <hr className="featurette-divider"/>
             <div className="row featurette">
                 <div className="col-md-7 order-md-2">
                     <h2 className="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span className="text-muted">See for yourself.</span>
@@ -20,7 +20,7 @@ const Featurette = () => {
                 </div>
             </div>
 
-            <hr class="featurette-divider"/>
+            <hr className="featurette-divider"/>
             <div className="row featurette">
                 <div className="col-md-7">
                     <h2 className="featurette-heading fw-normal lh-1">And lastly, this one. <span

@@ -2,27 +2,29 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 const Pricings = () => {
     return(
-        <div className="pricing-header p-3 pb-md-4 mx-auto text-center">
-            <h1 className="display-4 fw-normal">Pricing</h1>
-            <p className="fs-5 text-muted">Quickly build an effective pricing table for your potential customers with
-                this Bootstrap example. It’s built with default Bootstrap components and utilities with little
-                customization.</p>
+        <div className="container py-3">
+            <header>
+                <div className="pricing-header p-3 pb-md-4 mx-auto text-center">
+                    <h1 className="display-4 fw-normal text-body-emphasis">Pricing</h1>
+                    <p className="fs-5 text-body-secondary">Choose between our six payment plans</p>
+                </div>
+            </header>
+        <main>
             <div className="row row-cols-1 row-cols-md-3 mb-3 text-center">
                 <div className="col">
                     <div className="card mb-4 rounded-3 shadow-sm">
                         <div className="card-header py-3">
-                            <h4 className="my-0 fw-normal">Starter</h4>
+                            <h4 className="my-0 fw-normal">Free</h4>
                         </div>
                         <div className="card-body">
-                            <h1 className="card-title pricing-card-title">$100<small className="text-muted fw-light">/wk</small>
-                            </h1>
+                            <h1 className="card-title pricing-card-title">$0<small className="text-body-secondary fw-light">/mo</small></h1>
                             <ul className="list-unstyled mt-3 mb-4">
                                 <li>10 users included</li>
                                 <li>2 GB of storage</li>
                                 <li>Email support</li>
                                 <li>Help center access</li>
                             </ul>
-                            <button type="button" className="w-100 btn btn-lg btn-outline-primary">Sign up</button>
+                            <button type="button" className="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
                         </div>
                     </div>
                 </div>
@@ -32,8 +34,7 @@ const Pricings = () => {
                             <h4 className="my-0 fw-normal">Pro</h4>
                         </div>
                         <div className="card-body">
-                            <h1 className="card-title pricing-card-title">$300<small className="text-muted fw-light">/mo</small>
-                            </h1>
+                            <h1 className="card-title pricing-card-title">$50<small className="text-body-secondary fw-light">/mo</small></h1>
                             <ul className="list-unstyled mt-3 mb-4">
                                 <li>20 users included</li>
                                 <li>10 GB of storage</li>
@@ -45,16 +46,66 @@ const Pricings = () => {
                     </div>
                 </div>
                 <div className="col">
-                    <div className="card mb-4 rounded-3 shadow-sm border-primary">
-                        <div className="card-header py-3 text-white bg-primary border-primary">
-                            <h4 className="my-0 fw-normal">Enterprise</h4>
+                    <div className="card mb-4 rounded-3 ">
+                        <div className="card-header py-3 ">
+                            <h4 className="my-0 fw-normal">Studio</h4>
                         </div>
                         <div className="card-body">
-                            <h1 className="card-title pricing-card-title">$1000<small className="text-muted fw-light">/yr</small>
-                            </h1>
+                            <h1 className="card-title pricing-card-title">$100<small className="text-body-secondary fw-light">/mo</small></h1>
                             <ul className="list-unstyled mt-3 mb-4">
                                 <li>30 users included</li>
                                 <li>15 GB of storage</li>
+                                <li>Phone and email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button" className="w-100 btn btn-lg btn-primary">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="col">
+                    <div className="card mb-4 rounded-3 ">
+                        <div className="card-header py-3 ">
+                            <h4 className="my-0 fw-normal">Enterprise</h4>
+                        </div>
+                        <div className="card-body">
+                            <h1 className="card-title pricing-card-title">$250<small className="text-body-secondary fw-light">/mo</small></h1>
+                            <ul className="list-unstyled mt-3 mb-4">
+                                <li>30 users included</li>
+                                <li>100 GB of storage</li>
+                                <li>Phone and email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button" className="w-100 btn btn-lg btn-primary">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="col">
+                    <div className="card mb-4 rounded-3 ">
+                        <div className="card-header py-3 ">
+                            <h4 className="my-0 fw-normal">Industry</h4>
+                        </div>
+                        <div className="card-body">
+                            <h1 className="card-title pricing-card-title">$500<small className="text-body-secondary fw-light">/mo</small></h1>
+                            <ul className="list-unstyled mt-3 mb-4">
+                                <li>30 users included</li>
+                                <li>500 GB of storage</li>
+                                <li>Phone and email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button" className="w-100 btn btn-lg btn-primary">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="col">
+                    <div className="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div className="card-header py-3 text-bg-primary border-primary">
+                            <h4 className="my-0 fw-normal">Corporate</h4>
+                        </div>
+                        <div className="card-body">
+                            <h1 className="card-title pricing-card-title">$1000<small className="text-body-secondary fw-light">/mo</small></h1>
+                            <ul className="list-unstyled mt-3 mb-4">
+                                <li>30 users included</li>
+                                <li>1 TB of storage</li>
                                 <li>Phone and email support</li>
                                 <li>Help center access</li>
                             </ul>
@@ -70,108 +121,86 @@ const Pricings = () => {
                 <table className="table text-center">
                     <thead>
                     <tr>
-                        <th style={{width: '34%'}}></th>
-                        <th style={{width: '22%'}}>Free</th>
-                        <th style={{width: '22%'}}>Pro</th>
-                        <th style={{width: '22%'}}>Enterprise</th>
+                        <th className="width: 34%;"></th>
+                        <th className="width: 22%;">Free</th>
+                        <th className="width: 22%;">Pro</th>
+                        <th className="width: 22%;">Studio</th>
+                        <th className="width: 22%;">Enterprise</th>
+                        <th className="width: 22%;">Industry</th>
+                        <th className="width: 22%;">Corporate</th>
                     </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row" className="text-start">Public</th>
-                            <td>
-                                <svg className="bi" width="24" height="24">
-                                    <use href="#check"/>
-                                </svg>
-                            </td>
-                            <td>
-                                <svg className="bi" width="24" height="24">
-                                    <use href="#check"/>
-                                </svg>
-                            </td>
-                            <td>
-                                <svg className="bi" width="24" height="24">
-                                    <use href="#check"/>
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" className="text-start">Private</th>
-                            <td></td>
-                            <td>
-                                <svg className="bi" width="24" height="24">
-                                    <use href="#check"/>
-                                </svg>
-                            </td>
-                            <td>
-                                <svg className="bi" width="24" height="24">
-                                    <use href="#check"/>
-                                </svg>
-                            </td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <th scope="row" className="text-start">Permissions</th>
-                            <td>
-                                <svg className="bi" width="24" height="24">
-                                    <use href="#check"/>
-                                </svg>
-                            </td>
-                            <td>
-                                <svg className="bi" width="24" height="24">
-                                    <use href="#check"/>
-                                </svg>
-                            </td>
-                            <td>
-                                <svg className="bi" width="24" height="24">
-                                    <use href="#check"/>
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" className="text-start">Sharing</th>
-                            <td></td>
-                            <td>
-                                <svg className="bi" width="24" height="24">
-                                    <use href="#check"/>
-                                </svg>
-                            </td>
-                            <td>
-                                <svg className="bi" width="24" height="24">
-                                    <use href="#check"/>
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" className="text-start">Unlimited members</th>
-                            <td></td>
-                            <td>
-                                <svg className="bi" width="24" height="24">
-                                    <use href="#check"/>
-                                </svg>
-                            </td>
-                            <td>
-                                <svg className="bi" width="24" height="24">
-                                    <use href="#check"/>
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" className="text-start">Extra security</th>
-                            <td></td>
-                            <td></td>
-                            <td>
-                                <svg className="bi" width="24" height="24">
-                                    <use href="#check"/>
-                                </svg>
-                            </td>
-                        </tr>
+                    <tr>
+                        <th scope="row" className="text-start">Public</th>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" className="text-start">Private</th>
+                        <td></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" className="text-start">Permissions</th>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" className="text-start">Sharing</th>
+                        <td></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" className="text-start">Unlimited members</th>
+                        <td></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" className="text-start">Extra security</th>
+                        <td></td>
+                        <td></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" className="text-start">Backups</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                        <td><svg className="bi" width="24" height="24"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></td>
+                    </tr>
                     </tbody>
                 </table>
             </div>
+        </main>
         </div>
     )
 }
+
 
 export default Pricings

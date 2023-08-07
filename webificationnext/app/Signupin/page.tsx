@@ -1,6 +1,6 @@
 import Header from "../../components/Header";
 import Signin from "../../components/Signin";
-import Footer from "../../components/Footer"
+import Footer from "../../components/Footer";
 
 export default function Home() {
 
